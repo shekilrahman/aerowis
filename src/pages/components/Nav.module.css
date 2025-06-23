@@ -1,0 +1,58 @@
+@import "../Variables.module.css";
+
+.nav {
+  background-color: var(--second);
+  height: 60px;
+  padding: 2px;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: bolder;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+
+.navIcon {
+  position: relative;
+  color: gray;
+  text-align: center;
+  padding: 6px;
+  transition: color 0.3s ease;
+}
+
+.navIcon:hover {
+  color: var(--primary);
+}
+
+.active {
+  color: var(--primary); /* Highlight color */
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 5px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}

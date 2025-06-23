@@ -1,0 +1,62 @@
+@import "../Variables.module.css";
+
+.wrap {
+  width: 100%;
+  padding: 0 20px 0 20px;
+}
+
+.toolbar {
+  padding-top: 30px;
+}
+
+.stdContiner {
+  margin-top: 25px;
+}
+
+.stdCard {
+  width: 350px;
+  height: 130px;
+  position: relative;
+  margin-top: 50px;
+  padding: 3px;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: var(--second);
+  border: 1px solid #e0e6ed;
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.stdCard:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-10px);
+  background-color: var(--second);
+  color: var(--primary);
+}
+
+
+
+
+.stdCardLeft {
+  width: 33%;
+  position: relative;
+}
+
+.stdCardImg {
+  position: relative;
+  width: 120px;
+  height: 180px;
+  bottom: 82px;
+}
+.stdCardRight {
+  width: 67%;
+  height: 110px;
+  font-size: 15px;
+  padding: 10px;
+  overflow: hidden;
+  text-align: right;
+}
+.stdCardRight strong{
+  float: left;
+}

@@ -1,0 +1,199 @@
+@import "../Variables.module.css";
+
+.backButton {
+  position: relative;
+  bottom: 0;
+  border-radius: 0;
+  background-color: var(--third);
+  border: 0;
+}
+
+/* Container for full profile page */
+.profileContainer {
+  margin-top: 65px;
+  width: 100%;
+  min-height: calc(100vh - 65px);
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Layout container: sidebar + content */
+.profileLayout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar wrapper */
+.profileSidebar {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.avatarSection {
+  background-color: var(--third);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  position: relative;
+}
+
+.profileAvatar {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.avatarActions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.avatarSection:hover .avatarActions {
+  opacity: 1;
+}
+
+.dataSection {
+  background-color: var(--second);
+  color: var(--primary);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.studentName {
+  color: var(--primary);
+  font-size: larger;
+  font-weight: bolder;
+  margin-bottom: 8px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.detailsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailLabel {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.detailValue {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/*Content Section */
+
+.mainContent {
+  width: 100%;
+  padding: 20px;
+  height: 90vh;
+  overflow: scroll;
+}
+
+/* Finance */
+
+.finaceContiner {
+  padding: 24px;
+  background-color: #ffffff;
+  overflow: auto;
+  width: 100%;
+  height: calc(100vh - 170px);
+}
+
+.finaceHeader {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  background: var(--second);
+  border: none;
+  margin-bottom: 24px;
+}
+
+.addPaymentBtn {
+  border-radius: 8px;
+  background: var(--second);
+  border: none;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #1890ff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fieldRow {
+  margin-bottom: 12px;
+}
+
+.fieldLabel {
+  font-weight: 500;
+  color: #666;
+}
+
+.fieldValue {
+  color: #222;
+}
+
+.sectionDivider {
+  margin: 16px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.cardBody {
+  padding: 16px 24px;
+}
+
+.twoColumnLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .twoColumnLayout {
+    grid-template-columns: 1fr;
+  }
+}

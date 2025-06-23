@@ -1,0 +1,57 @@
+@import "../Variables.module.css";
+
+.examContiner{
+  padding: 40px;
+}
+
+.examsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 16px 0;
+}
+
+.cardGrid {
+  margin-top: 16px;
+}
+
+.examCard {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s ease;
+  border: none;
+  height: 100%;
+}
+
+.examCard:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.cardCover {
+  background: var(--second);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px 8px 0 0;
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.scoreCard {
+  background: var(--second);
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.examForm .ant-form-item-label > label {
+  font-weight: 500;
+}

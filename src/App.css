@@ -1,0 +1,39 @@
+@import "./pages/Variables.module.css";
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('./assets/fonts/centurygothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('./assets/fonts/centurygothic_bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--primary);
+}
+
+.App {
+  background-color: var(--primary);
+  min-height: 100vh;
+  overflow: auto;
+  padding-top: 65px;
+}
+
+.container {
+  background-color: var(--primary);
+  width: 100%;
+  margin: 0px;
+}

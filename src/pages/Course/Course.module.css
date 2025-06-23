@@ -1,0 +1,7 @@
+@import "../Variables.module.css";
+
+.courseWrap {
+  padding: 24px;
+  max-width: 1000px;
+  margin: auto;
+}

@@ -1,0 +1,111 @@
+@import "../../Variables.module.css";
+
+.card {
+  margin-top: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.divider {
+  color: var(--primary-color);
+  font-weight: 500;
+  border-top: 1px solid #f0f0f0;
+}
+
+.detailContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detailIcon {
+  font-size: 1.1rem;
+}
+
+.detailLabel {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.detailValue {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.editButton {
+  background-color: var(--edit-button-bg);
+  color: var(--edit-button-text);
+  border: none;
+  font-weight: 500;
+}
+
+.deleteButton {
+  font-weight: 500;
+}
+
+
+
+
+.reportTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  font-size: 12pt;
+}
+
+.reportTable th,
+.reportTable td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.reportTable th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+  color: #333;
+}
+
+.reportTable td {
+  background-color: #fff;
+  color: #222;
+}
+
+
+/* These help with page breaks and repeating headers */
+.reporTable {
+  page-break-inside: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.reporTable thead {
+  display: table-header-group; /* ensures headers repeat on page breaks */
+}
+
+.reporTable tr {
+  page-break-inside: avoid;
+}
+
+.page-break {
+  page-break-before: always;
+}

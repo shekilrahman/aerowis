@@ -1,0 +1,37 @@
+@import "../Variables.module.css";
+
+.wrap {
+  width: 100%;
+  padding: 0 20px 0 20px;
+}
+
+.toolbar {
+  padding-top: 30px;
+}
+
+.instructorContiner {
+  margin-top: 25px;
+}
+
+
+.instructorCard {
+  width: 350px;
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--third);
+  color: var(--second);
+  border: 1px solid #e0e6ed;
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  align-items: center;
+
+}
+
+.instructorCard:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-10px);
+  background-color: var(--second);
+  color: var(--primary);
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tauri + React</title>
+  <style>
+    html,
+    body {
+      user-select: none;
+      /* Prevent text selection */
+      -webkit-user-select: none;
+      /* For Safari/older WebKit */
+      -moz-user-select: none;
+      /* For Firefox */
+      -ms-user-select: none;
+      /* For IE/Edge */
+    }
+
+    img {
+      -webkit-user-drag: none;
+      /* Prevent image drag in WebKit */
+      user-drag: none;
+      /* Standard */
+      pointer-events: none;
+      /* Optional: disables context menu/clicks */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
